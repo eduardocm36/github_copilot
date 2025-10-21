@@ -1,7 +1,5 @@
 package service;
 
-import java.util.Optional;
-
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import model.Customer;
@@ -17,7 +15,7 @@ public class CustomerService {
         this.customerRepository = customerRepository;
     }
 
-    public Optional<Customer> getCustomer() {
+    public Customer getCustomer() {
         return customerRepository.getCustomer();
     }
     
